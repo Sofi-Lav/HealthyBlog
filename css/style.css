@@ -1,0 +1,9 @@
+/*Посилання*/
+a {
+  color: inherit; /* Зберігає колір тексту */
+  text-decoration: none; /* Прибирає підкреслення */
+}
+
+li {
+  list-style: none;
+}
