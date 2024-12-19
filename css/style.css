@@ -7,3 +7,54 @@ a {
 li {
   list-style: none; /*прибираємаркування списку*/
 }
+
+body {
+  background-color: #fcf9aa; /*колір фону*/
+}
+
+header {
+  background-color: #9ae347; /*колір меню*/
+}
+
+button {
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background: #9ae347;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #0d7501;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+} /*кнопки*/
+
+.button-go-home {
+  color: black;
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: #0d7501;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #0d7501;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+} /*кнопка повернутись на головну*/
+
+.button-go-current {
+  color: black;
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: #0d7501;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #0d7501;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+} /*кнопка повернутись на початку*/
