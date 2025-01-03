@@ -4,6 +4,15 @@ a {
   text-decoration: none; /* Прибирає підкреслення */
 }
 
+.nav-link {
+  &.active {
+    color: #0d7501;
+    font-weight: bold;
+  }
+  &:hover {
+    font-weight: bold;
+  }
+}
 li {
   list-style: none; /*прибираємаркування списку*/
 }
@@ -23,7 +32,7 @@ button {
   background: #9ae347;
   transition: all 0.2s ease;
   &:hover {
-    background-color: #0d7501;
+    background-color: #0d7501; /*зміна кольору при наводці*/
   }
   &:active {
     transform: scale(0.96);
@@ -37,16 +46,19 @@ button {
   background: #0d7501;
   transition: all 0.2s ease;
   &:hover {
-    background-color: #0d7501;
+    background-color: #0d7501; /*зміна кольору при наводці*/
   }
   &:active {
     transform: scale(0.96);
+  }
+  &:hover {
+    font-size: 16px;
   }
 } /*кнопка повернутись на головну*/
 
 .button-go-current {
   color: black;
-  padding: 10px 30px;
+  padding: 10px 30px; /*розмір*/
   border-radius: 6px;
   background: #0d7501;
   transition: all 0.2s ease;
@@ -57,4 +69,47 @@ button {
   &:active {
     transform: scale(0.96);
   }
+  &:hover {
+    font-size: 16px;
+  }
 } /*кнопка повернутись на початку*/
+
+.square {
+  width: 240px;
+  height: 240px;
+} /*квадратні фото*/
+
+.rectangle {
+  width: 490px;
+  height: 240px;
+} /*прямокутні фото*/
+
+h1 {
+  width: 350px;
+  margin-left: 630px;
+  margin-right: 630px;
+} /*назва*/
+
+.container {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 530px;
+  height: 480px;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
