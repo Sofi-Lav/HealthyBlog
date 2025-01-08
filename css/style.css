@@ -13,6 +13,7 @@ a {
     font-weight: bold;
   }
 }
+
 li {
   list-style: none; /*прибираємаркування списку*/
 }
@@ -107,6 +108,7 @@ h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: stretch; /* Додає вирівнювання по висоті */
+  gap: 30px;
 }
 
 .container {
@@ -123,4 +125,15 @@ h1 {
 .title {
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.div_statty {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
 }
