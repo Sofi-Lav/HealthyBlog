@@ -93,6 +93,7 @@ h1 {
 } /*назва*/
 
 .flex-button {
+  margin: 25px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -110,10 +111,26 @@ h1 {
   align-items: stretch; /* Додає вирівнювання по висоті */
   gap: 30px;
 }
+#Vitamins {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch; /* Додає вирівнювання по висоті */
+  gap: 30px;
+}
+
+#Sport {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch; /* Додає вирівнювання по висоті */
+  gap: 30px;
+}
 
 .container {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #f5f1808c;
   width: 530px;
   min-height: 480px; /* Задає мінімальну висоту */
   display: flex;
@@ -127,13 +144,79 @@ h1 {
   justify-content: center;
 }
 
+.div_statty {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  &:hover {
+    font-weight: bold;
+    color: #0d7501;
+  }
+}
+
 h1 {
   display: flex;
   justify-content: center;
 }
 
-.div_statty {
+.container_global {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #f5f1804c;
+  width: 867px;
+  min-height: 280px; /* Задає мінімальну висоту */
   display: flex;
-  flex-direction: none;
-  justify-content: space-between;
+  flex-direction: column; /* Упорядковує внутрішні елементи вертикально */
+  justify-content: space-between; /* Розподіл місця між елементами */
+  gap: 15px;
+  padding: 3%;
+}
+
+.flex-container_global {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container_foto_global {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch; /* Додає вирівнювання по висоті */
+  gap: 50px;
+}
+
+.container_foto_global {
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #f5f180a1;
+  width: 430px;
+  min-height: 280px; /* Задає мінімальну висоту */
+  display: flex;
+  flex-direction: column; /* Вирівнювання по вертикалі */
+  align-items: center; /* Горизонтальне вирівнювання */
+  justify-content: center; /* Вертикальне вирівнювання */
+  text-align: center; /* Центрування тексту всередині */
+  gap: 15px;
+  padding: 3%;
+}
+
+.container_foto_global img {
+  max-width: 100%; /* Адаптивний розмір фото */
+  height: auto; /* Збереження пропорцій фото */
+}
+
+.flex-buttom-global {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
 }
