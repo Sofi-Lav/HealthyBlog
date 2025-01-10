@@ -76,8 +76,8 @@ button {
 } /*кнопка повернутись на початку*/
 
 .square {
-  width: 240px;
-  height: 240px;
+  width: 290px;
+  height: 290px;
   padding: 130px;
 } /*квадратні фото*/
 
@@ -171,7 +171,7 @@ h1 {
 .container_global {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background: #f5f1804c;
+  background: #9ae3477c;
   width: 867px;
   min-height: 280px; /* Задає мінімальну висоту */
   display: flex;
@@ -219,4 +219,37 @@ h1 {
   margin: 25px;
   display: flex;
   justify-content: center;
+}
+
+.container_Healthy_icon {
+  margin-left: 30px;
+  border-radius: 15px;
+  width: 430px;
+  min-height: 280px; /* Задає мінімальну висоту */
+  display: flex;
+  flex-direction: column; /* Вирівнювання по вертикалі */
+  align-items: center; /* Горизонтальне вирівнювання */
+  justify-content: center; /* Вертикальне вирівнювання */
+  text-align: center; /* Центрування тексту всередині */
+  gap: 15px;
+  padding: 3%;
+}
+
+.container_Healthy_global {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.container_Healthy_text {
+  border-radius: 120px 60px 30px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #9ae3477c;
+  width: 630px;
+  height: 180px; /* Задає мінімальну висоту */
+  display: flex;
+  flex-direction: column; /* Упорядковує внутрішні елементи вертикально */
+  justify-content: space-between; /* Розподіл місця між елементами */
+  gap: 15px;
+  padding: 3%;
 }
