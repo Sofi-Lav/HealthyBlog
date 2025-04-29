@@ -276,3 +276,75 @@ h1 {
   justify-content: flex-start;
   gap: 20px;
 }
+
+button {
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}
+
+/* .no-scroll {
+  overflow: hidden;
+} */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 300px;
+  min-height: 200px;
+  padding: 15px;
+  background-color: #9ae347;
+  transform: translate(-50%, -50%);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(12, 0, 0, 0.5);
+  opacity: 1;
+}
+
+/* .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+} */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 15px;
+  background-color: #9ae347;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  background: transparent;
+  border-color: transparent;
+  &:hover {
+    background-color: transparent; /*зміна кольору при наводці*/
+  }
+}
+.button-open {
+  background: transparent;
+  border-color: transparent;
+  &:hover {
+    background-color: transparent; /*зміна кольору при наводці*/
+  }
+}
